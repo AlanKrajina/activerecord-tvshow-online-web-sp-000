@@ -18,6 +18,6 @@ class Show < ActiveRecord::Base
     show = Show.where("rating > ?", 5)
   end
   def self.shows_by_alphabetical_order
-    show = Show.where
+    show = Show..order('name desc')
   end
 end
